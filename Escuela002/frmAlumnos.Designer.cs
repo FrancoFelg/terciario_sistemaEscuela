@@ -37,10 +37,13 @@
             txtMatricula = new TextBox();
             txtApellido = new TextBox();
             txtNombre = new TextBox();
-            txtPostal = new TextBox();
+            txtCP = new TextBox();
             txtIngreso = new TextBox();
-            txtFechaNacimiento = new TextBox();
+            txtFecNac = new TextBox();
             button1 = new Button();
+            btnGrabar = new Button();
+            btnBorrar = new Button();
+            btnBuscar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -120,12 +123,12 @@
             txtNombre.Size = new Size(234, 23);
             txtNombre.TabIndex = 8;
             // 
-            // txtPostal
+            // txtCP
             // 
-            txtPostal.Location = new Point(131, 176);
-            txtPostal.Name = "txtPostal";
-            txtPostal.Size = new Size(234, 23);
-            txtPostal.TabIndex = 11;
+            txtCP.Location = new Point(131, 176);
+            txtCP.Name = "txtCP";
+            txtCP.Size = new Size(234, 23);
+            txtCP.TabIndex = 11;
             // 
             // txtIngreso
             // 
@@ -134,12 +137,12 @@
             txtIngreso.Size = new Size(234, 23);
             txtIngreso.TabIndex = 10;
             // 
-            // txtFechaNacimiento
+            // txtFecNac
             // 
-            txtFechaNacimiento.Location = new Point(131, 112);
-            txtFechaNacimiento.Name = "txtFechaNacimiento";
-            txtFechaNacimiento.Size = new Size(234, 23);
-            txtFechaNacimiento.TabIndex = 9;
+            txtFecNac.Location = new Point(131, 112);
+            txtFecNac.Name = "txtFecNac";
+            txtFecNac.Size = new Size(234, 23);
+            txtFecNac.TabIndex = 9;
             // 
             // button1
             // 
@@ -151,15 +154,47 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // btnGrabar
+            // 
+            btnGrabar.Location = new Point(12, 415);
+            btnGrabar.Name = "btnGrabar";
+            btnGrabar.Size = new Size(75, 23);
+            btnGrabar.TabIndex = 13;
+            btnGrabar.Text = "Grabar";
+            btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.Click += btnGrabar_Click;
+            // 
+            // btnBorrar
+            // 
+            btnBorrar.Location = new Point(93, 415);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(75, 23);
+            btnBorrar.TabIndex = 14;
+            btnBorrar.Text = "Borrar";
+            btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += button3_Click;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Location = new Point(384, 6);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 15;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // frmAlumnos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnBorrar);
+            Controls.Add(btnGrabar);
             Controls.Add(button1);
-            Controls.Add(txtPostal);
+            Controls.Add(txtCP);
             Controls.Add(txtIngreso);
-            Controls.Add(txtFechaNacimiento);
+            Controls.Add(txtFecNac);
             Controls.Add(txtNombre);
             Controls.Add(txtApellido);
             Controls.Add(txtMatricula);
@@ -186,9 +221,12 @@
         private TextBox txtMatricula;
         private TextBox txtApellido;
         private TextBox txtNombre;
-        private TextBox txtPostal;
+        private TextBox txtCP;
         private TextBox txtIngreso;
-        private TextBox txtFechaNacimiento;
+        private TextBox txtFecNac;
         private Button button1;
+        private Button btnGrabar;
+        private Button btnBorrar;
+        private Button btnBuscar;
     }
 }

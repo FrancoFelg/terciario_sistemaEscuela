@@ -77,7 +77,7 @@
             // gestionarAlumnosToolStripMenuItem
             // 
             gestionarAlumnosToolStripMenuItem.Name = "gestionarAlumnosToolStripMenuItem";
-            gestionarAlumnosToolStripMenuItem.Size = new Size(180, 22);
+            gestionarAlumnosToolStripMenuItem.Size = new Size(175, 22);
             gestionarAlumnosToolStripMenuItem.Text = "Gestionar Alumnos";
             gestionarAlumnosToolStripMenuItem.Click += gestionarAlumnosToolStripMenuItem_Click;
             // 

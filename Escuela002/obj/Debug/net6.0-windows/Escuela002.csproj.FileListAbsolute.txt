@@ -16,11 +16,6 @@ C:\Users\Outlet\Desktop\AZeta\Espacio Productivo o Academico\Terciario\Escuela00
 C:\Users\Outlet\Desktop\AZeta\Espacio Productivo o Academico\Terciario\Escuela001\Escuela002\Escuela002\obj\Debug\net6.0-windows\Escuela002.genruntimeconfig.cache
 C:\Users\Outlet\Desktop\AZeta\Espacio Productivo o Academico\Terciario\Escuela001\Escuela002\Escuela002\obj\Debug\net6.0-windows\ref\Escuela002.dll
 C:\Users\Outlet\Desktop\AZeta\Espacio Productivo o Academico\Terciario\Escuela001\Escuela002\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmAlumnos.resources
-C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.exe
-C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.deps.json
-C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.runtimeconfig.json
-C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.dll
-C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.pdb
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.csproj.AssemblyReference.cache
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmAlumnos.resources
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmPrincipal.resources
@@ -29,6 +24,18 @@ C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\n
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.AssemblyInfoInputs.cache
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.AssemblyInfo.cs
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.csproj.CoreCompileInputs.cache
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.exe
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.deps.json
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.runtimeconfig.json
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\Escuela002.pdb
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.csproj.CopyComplete
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.dll
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\refint\Escuela002.dll
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.pdb
