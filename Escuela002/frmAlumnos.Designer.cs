@@ -182,6 +182,7 @@
             btnBuscar.TabIndex = 15;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // frmAlumnos
             // 

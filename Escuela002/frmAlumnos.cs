@@ -127,6 +127,7 @@ namespace Escuela002
             }
             else
             {
+
                 //EDITAR REGISTRO
                 // Conexión a la BDD
                 //Declaro variable con tipo nombre = new..
@@ -171,6 +172,72 @@ namespace Escuela002
                 }
             }
 
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (txtMatricula.Text.Trim() == "")
+            {
+                MessageBox.Show("Debe ingresar un valor para la matrícula", "Búsqueda de alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            //Busca la mat especificada y si la encuentra blnNuevo pasa a false.
+            //Si no la encuentra debe permanecer en true.
+            using (SqlConnection con = new SqlConnection())
+            {
+                //Abrir conexión
+                // cadena de conexión o connection string: donde se tiene q conectar mi programa
+                // a qué servidor, credenciales (nombre de usuario y contraseña o credenciales de usuario de windows)
+                con.ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Escuela; Integrated Security = true"; //copiar cadena del botón Grabar
+                //Abro conexión
+                con.Open();
+
+
+                //Representa el objeto que utiliza el SP para ejecutarse
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "SEL_ALUMNO";//Nombre procedure
+                    cmd.CommandType = CommandType.StoredProcedure;//Tipo
+                    cmd.Connection = con;
+
+
+                    //LE ASIGNO AL PARAMETRO EL VALOR QUE ESTE EN LA CAJA DE TEXTO
+                    cmd.Parameters.AddWithValue("MATALU", txtMatricula.Text);
+
+                    //Ejecuta el comando y trata de llenar el data reader que se crea en la misma línea con los datos del registro
+
+                    SqlDataReader DatosAlumno = cmd.ExecuteReader();
+
+                    if (DatosAlumno.HasRows) //trajo algo? Tiene filas?
+                    {
+                        //Encontré al alumno cuya matrícula es la ingresada
+                        while (DatosAlumno.Read())
+                        {
+                            txtApellido.Text = DatosAlumno["APEALU"].ToString();
+                            txtNombre.Text = DatosAlumno["NOMALU"].ToString();
+                            txtIngreso.Text = DatosAlumno["INGALU"].ToString();
+                            txtCP.Text = DatosAlumno["POSALU"].ToString();
+                            //txtFecNac.Text = DatosAlumno["FNAALU"].ToString().Substring(0, 10);//Original
+                            //txtFecNac.Text = DatosAlumno["FNAALU"].ToString().Substring(0, 9);//Mejorado
+                            txtFecNac.Text = ((DateTime)DatosAlumno["FNAALU"]).ToString("dd/MM/yyyy");
+
+                            blnNuevo = false; // Hace que si modifico el registro y grabo, vaya por el else (upd) en el botón Grabar
+                        }
+                    }
+                    else                    
+                    {
+                        //NO se encontró la matrícula ingresada
+                        //Message box parámetros: mensaje/titulocaja/Boton/Icono
+                        MessageBox.Show("No se encontró la matrícula ingresada", "Búsqueda de alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        blnNuevo = true;
+                    }
+
+                    DatosAlumno.Close();
+
+                }
+            }
 
         }
     }
