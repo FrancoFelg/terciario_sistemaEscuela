@@ -37,14 +37,65 @@ namespace Escuela002
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//btnSalir
         {
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//BtnBorrar
         {
+            if (blnNuevo == false)//Buscó la matrícula y la encontró
+            {
+                DialogResult respuesta;
 
+                respuesta = MessageBox.Show("¿Desea borrar este alumno?", "Borrar Alumno", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (respuesta == DialogResult.Yes) //Si presionó el botón SI
+                {
+                    //Borro registro
+                    using (SqlConnection con = new SqlConnection())
+                    {
+                        //Abrir conexión
+                        // cadena de conexión o connect string: donde se tiene q conectar mi programa
+                        // a qué servidor, credenciales (nombre de usuario y contraseña o credenciales de usuario de windows)
+                        con.ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Escuela; Integrated Security = true";
+                        //Conecto 
+                        con.Open();
+
+                        //Defino el comando que apunta a del_alumno
+                        //Representa el objeto q vos queres usar en la BDD
+                        using (SqlCommand cmd = new SqlCommand())
+                        {
+                            cmd.CommandText = "DEL_ALUMNO";//Nombre procedure
+                            cmd.CommandType = CommandType.StoredProcedure;//Tipo
+                            cmd.Connection = con;
+
+                            //SETEO PARAMETROS. ASIGNACION DE VALORES A LOS PARAMETROS
+                            //LE ASIGNO AL PARAMETRO EL VALOR QUE ESTE EN EL INPUT - LA PK
+                            cmd.Parameters.AddWithValue("MATALU", txtMatricula.Text);
+
+
+                            //EJECUTA EL COMANDO
+                            cmd.ExecuteNonQuery();
+
+                            txtMatricula.Text = "";
+                            txtApellido.Text = "";
+                            txtNombre.Text = "";
+                            txtIngreso.Text = "";
+                            txtCP.Text = "";
+                            txtFecNac.Text = "";
+
+                            blnNuevo = true;
+                        }
+                    }
+
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Debe buscar un alumno para poder borrarlo", "Borrado de alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
