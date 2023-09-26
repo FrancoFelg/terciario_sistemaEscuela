@@ -91,19 +91,20 @@
             // gestionarNotasToolStripMenuItem1
             // 
             gestionarNotasToolStripMenuItem1.Name = "gestionarNotasToolStripMenuItem1";
-            gestionarNotasToolStripMenuItem1.Size = new Size(167, 22);
+            gestionarNotasToolStripMenuItem1.Size = new Size(180, 22);
             gestionarNotasToolStripMenuItem1.Text = "Gestionar Notas";
+            gestionarNotasToolStripMenuItem1.Click += gestionarNotasToolStripMenuItem1_Click;
             // 
             // notasDeAlumnoToolStripMenuItem1
             // 
             notasDeAlumnoToolStripMenuItem1.Name = "notasDeAlumnoToolStripMenuItem1";
-            notasDeAlumnoToolStripMenuItem1.Size = new Size(167, 22);
+            notasDeAlumnoToolStripMenuItem1.Size = new Size(180, 22);
             notasDeAlumnoToolStripMenuItem1.Text = "Notas de Alumno";
             // 
             // listadoDeNotasToolStripMenuItem1
             // 
             listadoDeNotasToolStripMenuItem1.Name = "listadoDeNotasToolStripMenuItem1";
-            listadoDeNotasToolStripMenuItem1.Size = new Size(167, 22);
+            listadoDeNotasToolStripMenuItem1.Size = new Size(180, 22);
             listadoDeNotasToolStripMenuItem1.Text = "Listado de Notas";
             // 
             // configuraciónToolStripMenuItem
@@ -116,20 +117,23 @@
             // asignaturasToolStripMenuItem
             // 
             asignaturasToolStripMenuItem.Name = "asignaturasToolStripMenuItem";
-            asignaturasToolStripMenuItem.Size = new Size(163, 22);
+            asignaturasToolStripMenuItem.Size = new Size(180, 22);
             asignaturasToolStripMenuItem.Text = "Asignaturas";
+            asignaturasToolStripMenuItem.Click += asignaturasToolStripMenuItem_Click;
             // 
             // ciudadesToolStripMenuItem
             // 
             ciudadesToolStripMenuItem.Name = "ciudadesToolStripMenuItem";
-            ciudadesToolStripMenuItem.Size = new Size(163, 22);
+            ciudadesToolStripMenuItem.Size = new Size(180, 22);
             ciudadesToolStripMenuItem.Text = "Ciudades";
+            ciudadesToolStripMenuItem.Click += ciudadesToolStripMenuItem_Click;
             // 
             // tiposDeExámenToolStripMenuItem
             // 
             tiposDeExámenToolStripMenuItem.Name = "tiposDeExámenToolStripMenuItem";
-            tiposDeExámenToolStripMenuItem.Size = new Size(163, 22);
+            tiposDeExámenToolStripMenuItem.Size = new Size(180, 22);
             tiposDeExámenToolStripMenuItem.Text = "Tipos de Exámen";
+            tiposDeExámenToolStripMenuItem.Click += tiposDeExámenToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 

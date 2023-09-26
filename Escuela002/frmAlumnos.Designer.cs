@@ -108,6 +108,7 @@
             txtMatricula.Name = "txtMatricula";
             txtMatricula.Size = new Size(234, 23);
             txtMatricula.TabIndex = 6;
+            txtMatricula.TextChanged += txtMatricula_TextChanged;
             // 
             // txtApellido
             // 
@@ -146,7 +147,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(713, 415);
+            button1.Location = new Point(713, 412);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 12;
@@ -186,8 +187,10 @@
             // 
             // frmAlumnos
             // 
+            AcceptButton = btnGrabar;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = button1;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBuscar);
             Controls.Add(btnBorrar);
@@ -205,8 +208,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "frmAlumnos";
             Text = "Gestion de Alumnos";
+            Load += frmAlumnos_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -277,7 +277,7 @@ namespace Escuela002
                             blnNuevo = false; // Hace que si modifico el registro y grabo, vaya por el else (upd) en el botón Grabar
                         }
                     }
-                    else                    
+                    else
                     {
                         //NO se encontró la matrícula ingresada
                         //Message box parámetros: mensaje/titulocaja/Boton/Icono
@@ -290,6 +290,15 @@ namespace Escuela002
                 }
             }
 
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMatricula_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

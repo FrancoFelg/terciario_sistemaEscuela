@@ -41,3 +41,7 @@ C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\n
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.pdb
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.genruntimeconfig.cache
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\ref\Escuela002.dll
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmAsignaturas.resources
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmCiudades.resources
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmNotas.resources
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmTiposExamen.resources
