@@ -32,8 +32,8 @@
             btnGrabar = new Button();
             btnBorrar = new Button();
             btnSalir = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtCodigoPostal = new TextBox();
+            txtNombre = new TextBox();
             label1 = new Label();
             label2 = new Label();
             SuspendLayout();
@@ -56,6 +56,7 @@
             btnGrabar.TabIndex = 1;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.Click += btnGrabar_Click;
             // 
             // btnBorrar
             // 
@@ -75,19 +76,19 @@
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtCodigoPostal
             // 
-            textBox1.Location = new Point(115, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(217, 23);
-            textBox1.TabIndex = 4;
+            txtCodigoPostal.Location = new Point(115, 27);
+            txtCodigoPostal.Name = "txtCodigoPostal";
+            txtCodigoPostal.Size = new Size(217, 23);
+            txtCodigoPostal.TabIndex = 4;
             // 
-            // textBox2
+            // txtNombre
             // 
-            textBox2.Location = new Point(115, 56);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(217, 23);
-            textBox2.TabIndex = 5;
+            txtNombre.Location = new Point(115, 56);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(217, 23);
+            txtNombre.TabIndex = 5;
             // 
             // label1
             // 
@@ -114,8 +115,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
+            Controls.Add(txtCodigoPostal);
             Controls.Add(btnSalir);
             Controls.Add(btnBorrar);
             Controls.Add(btnGrabar);
@@ -132,8 +133,8 @@
         private Button btnGrabar;
         private Button btnBorrar;
         private Button btnSalir;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtCodigoPostal;
+        private TextBox txtNombre;
         private Label label1;
         private Label label2;
     }
