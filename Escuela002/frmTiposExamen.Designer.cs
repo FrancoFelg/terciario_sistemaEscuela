@@ -34,8 +34,8 @@
             btnSalir = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtCodigo = new TextBox();
+            txtNombre = new TextBox();
             SuspendLayout();
             // 
             // btnBuscar
@@ -46,6 +46,7 @@
             btnBuscar.TabIndex = 0;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btnGrabar
             // 
@@ -55,6 +56,7 @@
             btnGrabar.TabIndex = 1;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.Click += btnGrabar_Click;
             // 
             // btnBorrar
             // 
@@ -64,6 +66,7 @@
             btnBorrar.TabIndex = 2;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnSalir
             // 
@@ -73,6 +76,7 @@
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // label1
             // 
@@ -92,27 +96,28 @@
             label2.TabIndex = 5;
             label2.Text = "Nombre";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            textBox1.Location = new Point(106, 19);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(228, 23);
-            textBox1.TabIndex = 6;
+            txtCodigo.Location = new Point(106, 19);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(228, 23);
+            txtCodigo.TabIndex = 6;
+            txtCodigo.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtNombre
             // 
-            textBox2.Location = new Point(106, 55);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(228, 23);
-            textBox2.TabIndex = 7;
+            txtNombre.Location = new Point(106, 55);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(228, 23);
+            txtNombre.TabIndex = 7;
             // 
             // frmTiposExamen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
+            Controls.Add(txtCodigo);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnSalir);
@@ -133,7 +138,7 @@
         private Button btnSalir;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtCodigo;
+        private TextBox txtNombre;
     }
 }

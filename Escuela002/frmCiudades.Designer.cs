@@ -66,6 +66,7 @@
             btnBorrar.TabIndex = 2;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnSalir
             // 
@@ -75,6 +76,7 @@
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // txtCodigoPostal
             // 

@@ -32,16 +32,16 @@
             btnGrabar = new Button();
             btnBorrar = new Button();
             btnSalir = new Button();
-            textBox1 = new TextBox();
+            txtMateria = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtAsignatura = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtTipo = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            txtFecha = new TextBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtValor = new TextBox();
             SuspendLayout();
             // 
             // btnBuscar
@@ -52,6 +52,7 @@
             btnBuscar.TabIndex = 0;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btnGrabar
             // 
@@ -61,6 +62,7 @@
             btnGrabar.TabIndex = 1;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.Click += btnGrabar_Click;
             // 
             // btnBorrar
             // 
@@ -70,6 +72,7 @@
             btnBorrar.TabIndex = 2;
             btnBorrar.Text = "Borrar";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnSalir
             // 
@@ -79,13 +82,14 @@
             btnSalir.TabIndex = 3;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
-            // textBox1
+            // txtMateria
             // 
-            textBox1.Location = new Point(105, 24);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(252, 23);
-            textBox1.TabIndex = 4;
+            txtMateria.Location = new Point(105, 24);
+            txtMateria.Name = "txtMateria";
+            txtMateria.Size = new Size(252, 23);
+            txtMateria.TabIndex = 4;
             // 
             // label1
             // 
@@ -105,12 +109,12 @@
             label2.TabIndex = 8;
             label2.Text = "Asignatura";
             // 
-            // textBox2
+            // txtAsignatura
             // 
-            textBox2.Location = new Point(105, 53);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(252, 23);
-            textBox2.TabIndex = 7;
+            txtAsignatura.Location = new Point(105, 53);
+            txtAsignatura.Name = "txtAsignatura";
+            txtAsignatura.Size = new Size(252, 23);
+            txtAsignatura.TabIndex = 7;
             // 
             // label3
             // 
@@ -121,12 +125,12 @@
             label3.TabIndex = 10;
             label3.Text = "Tipo";
             // 
-            // textBox3
+            // txtTipo
             // 
-            textBox3.Location = new Point(105, 84);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(252, 23);
-            textBox3.TabIndex = 9;
+            txtTipo.Location = new Point(105, 84);
+            txtTipo.Name = "txtTipo";
+            txtTipo.Size = new Size(252, 23);
+            txtTipo.TabIndex = 9;
             // 
             // label4
             // 
@@ -137,12 +141,12 @@
             label4.TabIndex = 12;
             label4.Text = "Fecha";
             // 
-            // textBox4
+            // txtFecha
             // 
-            textBox4.Location = new Point(105, 115);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(252, 23);
-            textBox4.TabIndex = 11;
+            txtFecha.Location = new Point(105, 115);
+            txtFecha.Name = "txtFecha";
+            txtFecha.Size = new Size(252, 23);
+            txtFecha.TabIndex = 11;
             // 
             // label5
             // 
@@ -153,12 +157,12 @@
             label5.TabIndex = 14;
             label5.Text = "Valor";
             // 
-            // textBox5
+            // txtValor
             // 
-            textBox5.Location = new Point(105, 147);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(252, 23);
-            textBox5.TabIndex = 13;
+            txtValor.Location = new Point(105, 147);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(252, 23);
+            txtValor.TabIndex = 13;
             // 
             // frmNotas
             // 
@@ -166,15 +170,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label5);
-            Controls.Add(textBox5);
+            Controls.Add(txtValor);
             Controls.Add(label4);
-            Controls.Add(textBox4);
+            Controls.Add(txtFecha);
             Controls.Add(label3);
-            Controls.Add(textBox3);
+            Controls.Add(txtTipo);
             Controls.Add(label2);
-            Controls.Add(textBox2);
+            Controls.Add(txtAsignatura);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(txtMateria);
             Controls.Add(btnSalir);
             Controls.Add(btnBorrar);
             Controls.Add(btnGrabar);
@@ -191,15 +195,15 @@
         private Button btnGrabar;
         private Button btnBorrar;
         private Button btnSalir;
-        private TextBox textBox1;
+        private TextBox txtMateria;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtAsignatura;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtTipo;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox txtFecha;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtValor;
     }
 }
