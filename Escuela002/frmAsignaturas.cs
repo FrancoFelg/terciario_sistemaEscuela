@@ -223,9 +223,7 @@ namespace Escuela002
                             blnNuevo = true;
                         }
                     }
-
                 }
-
             }
             else
             {

@@ -41,6 +41,7 @@
             asignaturasToolStripMenuItem = new ToolStripMenuItem();
             ciudadesToolStripMenuItem = new ToolStripMenuItem();
             tiposDeExámenToolStripMenuItem = new ToolStripMenuItem();
+            listaDeAlumnosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,13 +64,13 @@
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(180, 22);
+            salirToolStripMenuItem.Size = new Size(96, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // gestiónDeAlumnosToolStripMenuItem
             // 
-            gestiónDeAlumnosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gestionarAlumnosToolStripMenuItem });
+            gestiónDeAlumnosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gestionarAlumnosToolStripMenuItem, listaDeAlumnosToolStripMenuItem });
             gestiónDeAlumnosToolStripMenuItem.Name = "gestiónDeAlumnosToolStripMenuItem";
             gestiónDeAlumnosToolStripMenuItem.Size = new Size(121, 20);
             gestiónDeAlumnosToolStripMenuItem.Text = "Gestión de Alumno";
@@ -78,7 +79,7 @@
             // gestionarAlumnosToolStripMenuItem
             // 
             gestionarAlumnosToolStripMenuItem.Name = "gestionarAlumnosToolStripMenuItem";
-            gestionarAlumnosToolStripMenuItem.Size = new Size(175, 22);
+            gestionarAlumnosToolStripMenuItem.Size = new Size(180, 22);
             gestionarAlumnosToolStripMenuItem.Text = "Gestionar Alumnos";
             gestionarAlumnosToolStripMenuItem.Click += gestionarAlumnosToolStripMenuItem_Click;
             // 
@@ -92,20 +93,20 @@
             // gestionarNotasToolStripMenuItem1
             // 
             gestionarNotasToolStripMenuItem1.Name = "gestionarNotasToolStripMenuItem1";
-            gestionarNotasToolStripMenuItem1.Size = new Size(167, 22);
+            gestionarNotasToolStripMenuItem1.Size = new Size(180, 22);
             gestionarNotasToolStripMenuItem1.Text = "Gestionar Notas";
             gestionarNotasToolStripMenuItem1.Click += gestionarNotasToolStripMenuItem1_Click;
             // 
             // notasDeAlumnoToolStripMenuItem1
             // 
             notasDeAlumnoToolStripMenuItem1.Name = "notasDeAlumnoToolStripMenuItem1";
-            notasDeAlumnoToolStripMenuItem1.Size = new Size(167, 22);
+            notasDeAlumnoToolStripMenuItem1.Size = new Size(180, 22);
             notasDeAlumnoToolStripMenuItem1.Text = "Notas de Alumno";
             // 
             // listadoDeNotasToolStripMenuItem1
             // 
             listadoDeNotasToolStripMenuItem1.Name = "listadoDeNotasToolStripMenuItem1";
-            listadoDeNotasToolStripMenuItem1.Size = new Size(167, 22);
+            listadoDeNotasToolStripMenuItem1.Size = new Size(180, 22);
             listadoDeNotasToolStripMenuItem1.Text = "Listado de Notas";
             // 
             // configuraciónToolStripMenuItem
@@ -135,6 +136,12 @@
             tiposDeExámenToolStripMenuItem.Size = new Size(163, 22);
             tiposDeExámenToolStripMenuItem.Text = "Tipos de Exámen";
             tiposDeExámenToolStripMenuItem.Click += tiposDeExámenToolStripMenuItem_Click;
+            // 
+            // listaDeAlumnosToolStripMenuItem
+            // 
+            listaDeAlumnosToolStripMenuItem.Name = "listaDeAlumnosToolStripMenuItem";
+            listaDeAlumnosToolStripMenuItem.Size = new Size(180, 22);
+            listaDeAlumnosToolStripMenuItem.Text = "Lista de Alumnos";
             // 
             // frmPrincipal
             // 
@@ -168,5 +175,6 @@
         private ToolStripMenuItem ciudadesToolStripMenuItem;
         private ToolStripMenuItem tiposDeExámenToolStripMenuItem;
         private ToolStripMenuItem gestionarAlumnosToolStripMenuItem;
+        private ToolStripMenuItem listaDeAlumnosToolStripMenuItem;
     }
 }
