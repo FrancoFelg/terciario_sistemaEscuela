@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             btnSalir = new Button();
-            dgrAlumnos = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dgrAlumnos).BeginInit();
+            dgvAlumnos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvAlumnos).BeginInit();
             SuspendLayout();
             // 
             // btnSalir
@@ -43,32 +43,32 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
-            // dgrAlumnos
+            // dgvAlumnos
             // 
-            dgrAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgrAlumnos.GridColor = SystemColors.ButtonHighlight;
-            dgrAlumnos.Location = new Point(12, 12);
-            dgrAlumnos.Name = "dgrAlumnos";
-            dgrAlumnos.RowTemplate.Height = 25;
-            dgrAlumnos.Size = new Size(776, 397);
-            dgrAlumnos.TabIndex = 1;
+            dgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAlumnos.GridColor = SystemColors.ButtonHighlight;
+            dgvAlumnos.Location = new Point(12, 12);
+            dgvAlumnos.Name = "dgvAlumnos";
+            dgvAlumnos.RowTemplate.Height = 25;
+            dgvAlumnos.Size = new Size(776, 397);
+            dgvAlumnos.TabIndex = 1;
             // 
             // frmAlumnosLista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dgrAlumnos);
+            Controls.Add(dgvAlumnos);
             Controls.Add(btnSalir);
             Name = "frmAlumnosLista";
             Text = "Listado de Alumnos";
-            ((System.ComponentModel.ISupportInitialize)dgrAlumnos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAlumnos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btnSalir;
-        private DataGridView dgrAlumnos;
+        private DataGridView dgvAlumnos;
     }
 }
