@@ -21,7 +21,6 @@ namespace Escuela002
         public frmAlumnosLista()
         {
             InitializeComponent();
-
         }
 
         private void frmAlumnosLista_Load(object sender, EventArgs e)
@@ -30,12 +29,15 @@ namespace Escuela002
 
             dgvAlumnos.DataSource = BindingSourceAlumnos;
 
-            clsAlumnos clsAlumnos = new clsAlumnos(); // instanciamos la clase
+            //clsAlumnos clsAlumnos = new clsAlumnos(); // instanciamos la clase
 
             BindingSourceAlumnos.DataSource = GetAlumnos("SEL_ALUMNOS");
 
             SetAlumnos();
         }
+
+
+        //PEGAR TODO ESTE CODIGO DEBAJO DE LA LLAVE QUE CIERRA frmAlumnosLista_Load
 
         private void SetAlumnos()
         {
@@ -108,12 +110,17 @@ namespace Escuela002
             return dtAlumnos;
         }
 
-
-
-
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void frmAlumnosLista_Load_1(object sender, EventArgs e)
         {
-            this.Close();
+            //Asigno a mi fuente de datoS, la variable que creé en la clase
+
+            dgvAlumnos.DataSource = BindingSourceAlumnos;
+
+            //clsAlumnos clsAlumnos = new clsAlumnos(); // instanciamos la clase
+
+            BindingSourceAlumnos.DataSource = GetAlumnos("SEL_ALUMNOS");
+
+            SetAlumnos();
         }
     }
 }

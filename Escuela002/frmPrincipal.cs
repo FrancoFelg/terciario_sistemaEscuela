@@ -62,5 +62,11 @@ namespace Escuela002
         {
             this.Close();
         }
+
+        private void listaDeAlumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumnosLista AlumnosLista = new frmAlumnosLista();
+            AlumnosLista.ShowDialog();
+        }
     }
 }

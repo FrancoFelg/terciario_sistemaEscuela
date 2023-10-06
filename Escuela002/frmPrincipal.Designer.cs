@@ -33,6 +33,7 @@
             salirToolStripMenuItem = new ToolStripMenuItem();
             gestiónDeAlumnosToolStripMenuItem = new ToolStripMenuItem();
             gestionarAlumnosToolStripMenuItem = new ToolStripMenuItem();
+            listaDeAlumnosToolStripMenuItem = new ToolStripMenuItem();
             gestiónDeNotasToolStripMenuItem = new ToolStripMenuItem();
             gestionarNotasToolStripMenuItem1 = new ToolStripMenuItem();
             notasDeAlumnoToolStripMenuItem1 = new ToolStripMenuItem();
@@ -41,7 +42,6 @@
             asignaturasToolStripMenuItem = new ToolStripMenuItem();
             ciudadesToolStripMenuItem = new ToolStripMenuItem();
             tiposDeExámenToolStripMenuItem = new ToolStripMenuItem();
-            listaDeAlumnosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -83,6 +83,13 @@
             gestionarAlumnosToolStripMenuItem.Text = "Gestionar Alumnos";
             gestionarAlumnosToolStripMenuItem.Click += gestionarAlumnosToolStripMenuItem_Click;
             // 
+            // listaDeAlumnosToolStripMenuItem
+            // 
+            listaDeAlumnosToolStripMenuItem.Name = "listaDeAlumnosToolStripMenuItem";
+            listaDeAlumnosToolStripMenuItem.Size = new Size(180, 22);
+            listaDeAlumnosToolStripMenuItem.Text = "Lista de Alumnos";
+            listaDeAlumnosToolStripMenuItem.Click += listaDeAlumnosToolStripMenuItem_Click;
+            // 
             // gestiónDeNotasToolStripMenuItem
             // 
             gestiónDeNotasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { gestionarNotasToolStripMenuItem1, notasDeAlumnoToolStripMenuItem1, listadoDeNotasToolStripMenuItem1 });
@@ -93,20 +100,20 @@
             // gestionarNotasToolStripMenuItem1
             // 
             gestionarNotasToolStripMenuItem1.Name = "gestionarNotasToolStripMenuItem1";
-            gestionarNotasToolStripMenuItem1.Size = new Size(180, 22);
+            gestionarNotasToolStripMenuItem1.Size = new Size(167, 22);
             gestionarNotasToolStripMenuItem1.Text = "Gestionar Notas";
             gestionarNotasToolStripMenuItem1.Click += gestionarNotasToolStripMenuItem1_Click;
             // 
             // notasDeAlumnoToolStripMenuItem1
             // 
             notasDeAlumnoToolStripMenuItem1.Name = "notasDeAlumnoToolStripMenuItem1";
-            notasDeAlumnoToolStripMenuItem1.Size = new Size(180, 22);
+            notasDeAlumnoToolStripMenuItem1.Size = new Size(167, 22);
             notasDeAlumnoToolStripMenuItem1.Text = "Notas de Alumno";
             // 
             // listadoDeNotasToolStripMenuItem1
             // 
             listadoDeNotasToolStripMenuItem1.Name = "listadoDeNotasToolStripMenuItem1";
-            listadoDeNotasToolStripMenuItem1.Size = new Size(180, 22);
+            listadoDeNotasToolStripMenuItem1.Size = new Size(167, 22);
             listadoDeNotasToolStripMenuItem1.Text = "Listado de Notas";
             // 
             // configuraciónToolStripMenuItem
@@ -136,12 +143,6 @@
             tiposDeExámenToolStripMenuItem.Size = new Size(163, 22);
             tiposDeExámenToolStripMenuItem.Text = "Tipos de Exámen";
             tiposDeExámenToolStripMenuItem.Click += tiposDeExámenToolStripMenuItem_Click;
-            // 
-            // listaDeAlumnosToolStripMenuItem
-            // 
-            listaDeAlumnosToolStripMenuItem.Name = "listaDeAlumnosToolStripMenuItem";
-            listaDeAlumnosToolStripMenuItem.Size = new Size(180, 22);
-            listaDeAlumnosToolStripMenuItem.Text = "Lista de Alumnos";
             // 
             // frmPrincipal
             // 

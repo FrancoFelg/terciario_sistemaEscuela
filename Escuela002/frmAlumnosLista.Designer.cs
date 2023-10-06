@@ -28,47 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSalir = new Button();
             dgvAlumnos = new DataGridView();
+            btnSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvAlumnos).BeginInit();
             SuspendLayout();
-            // 
-            // btnSalir
-            // 
-            btnSalir.Location = new Point(713, 415);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
-            btnSalir.TabIndex = 0;
-            btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += btnSalir_Click;
             // 
             // dgvAlumnos
             // 
             dgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAlumnos.GridColor = SystemColors.ButtonHighlight;
             dgvAlumnos.Location = new Point(12, 12);
             dgvAlumnos.Name = "dgvAlumnos";
             dgvAlumnos.RowTemplate.Height = 25;
-            dgvAlumnos.Size = new Size(776, 397);
-            dgvAlumnos.TabIndex = 1;
+            dgvAlumnos.Size = new Size(756, 288);
+            dgvAlumnos.TabIndex = 0;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(665, 387);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 1;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
             // 
             // frmAlumnosLista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dgvAlumnos);
             Controls.Add(btnSalir);
+            Controls.Add(dgvAlumnos);
             Name = "frmAlumnosLista";
-            Text = "Listado de Alumnos";
+            Text = "frmAlumnosLista";
+            Load += frmAlumnosLista_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvAlumnos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnSalir;
         private DataGridView dgvAlumnos;
+        private Button btnSalir;
     }
 }
