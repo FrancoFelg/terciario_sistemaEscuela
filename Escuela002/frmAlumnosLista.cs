@@ -78,7 +78,7 @@ namespace Escuela002
 
 
 
-                daAlumnos = new SqlDataAdapter(SPNombre, "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Escuela; Integrated Security = true");
+                daAlumnos = new SqlDataAdapter(SPNombre, "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EscuelaLeti; Integrated Security = true");
 
                 SqlCommandBuilder cbAlumnos = new SqlCommandBuilder(daAlumnos);
                 //

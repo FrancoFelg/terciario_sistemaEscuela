@@ -46,3 +46,4 @@ C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\n
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmNotas.resources
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmTiposExamen.resources
 C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmAlumnosLista.resources
+C:\Users\Outlet\Documents\GitHub\terciario_sistemaEscuela\Escuela002\obj\Debug\net6.0-windows\Escuela002.frmAlumnosNotas.resources

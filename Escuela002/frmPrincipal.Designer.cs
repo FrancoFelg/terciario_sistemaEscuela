@@ -100,20 +100,21 @@
             // gestionarNotasToolStripMenuItem1
             // 
             gestionarNotasToolStripMenuItem1.Name = "gestionarNotasToolStripMenuItem1";
-            gestionarNotasToolStripMenuItem1.Size = new Size(167, 22);
+            gestionarNotasToolStripMenuItem1.Size = new Size(180, 22);
             gestionarNotasToolStripMenuItem1.Text = "Gestionar Notas";
             gestionarNotasToolStripMenuItem1.Click += gestionarNotasToolStripMenuItem1_Click;
             // 
             // notasDeAlumnoToolStripMenuItem1
             // 
             notasDeAlumnoToolStripMenuItem1.Name = "notasDeAlumnoToolStripMenuItem1";
-            notasDeAlumnoToolStripMenuItem1.Size = new Size(167, 22);
+            notasDeAlumnoToolStripMenuItem1.Size = new Size(180, 22);
             notasDeAlumnoToolStripMenuItem1.Text = "Notas de Alumno";
+            notasDeAlumnoToolStripMenuItem1.Click += notasDeAlumnoToolStripMenuItem1_Click;
             // 
             // listadoDeNotasToolStripMenuItem1
             // 
             listadoDeNotasToolStripMenuItem1.Name = "listadoDeNotasToolStripMenuItem1";
-            listadoDeNotasToolStripMenuItem1.Size = new Size(167, 22);
+            listadoDeNotasToolStripMenuItem1.Size = new Size(180, 22);
             listadoDeNotasToolStripMenuItem1.Text = "Listado de Notas";
             // 
             // configuraciónToolStripMenuItem
