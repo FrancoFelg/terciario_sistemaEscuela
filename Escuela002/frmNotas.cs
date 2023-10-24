@@ -148,7 +148,7 @@ namespace Escuela002
                             cmd.Parameters.AddWithValue("FECNOT", txtFecha.Text);
                             cmd.Parameters.AddWithValue("TIPNOT", txtTipo.Text);
 
-                            
+
 
                             //EJECUTA EL COMANDO
                             cmd.ExecuteNonQuery();

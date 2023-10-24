@@ -39,17 +39,18 @@
             dgvAlumnos.Location = new Point(12, 12);
             dgvAlumnos.Name = "dgvAlumnos";
             dgvAlumnos.RowTemplate.Height = 25;
-            dgvAlumnos.Size = new Size(756, 288);
+            dgvAlumnos.Size = new Size(756, 397);
             dgvAlumnos.TabIndex = 0;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(665, 387);
+            btnSalir.Location = new Point(693, 415);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(75, 23);
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmAlumnosLista
             // 

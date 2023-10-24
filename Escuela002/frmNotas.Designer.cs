@@ -86,9 +86,9 @@
             // 
             // txtMateria
             // 
-            txtMateria.Location = new Point(105, 24);
+            txtMateria.Location = new Point(130, 24);
             txtMateria.Name = "txtMateria";
-            txtMateria.Size = new Size(252, 23);
+            txtMateria.Size = new Size(227, 23);
             txtMateria.TabIndex = 4;
             // 
             // label1
@@ -96,9 +96,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(23, 27);
             label1.Name = "label1";
-            label1.Size = new Size(47, 15);
+            label1.Size = new Size(101, 15);
             label1.TabIndex = 6;
-            label1.Text = "Materia";
+            label1.Text = "Matricula alumno";
             // 
             // label2
             // 
@@ -111,9 +111,9 @@
             // 
             // txtAsignatura
             // 
-            txtAsignatura.Location = new Point(105, 53);
+            txtAsignatura.Location = new Point(130, 53);
             txtAsignatura.Name = "txtAsignatura";
-            txtAsignatura.Size = new Size(252, 23);
+            txtAsignatura.Size = new Size(227, 23);
             txtAsignatura.TabIndex = 7;
             // 
             // label3
@@ -127,9 +127,9 @@
             // 
             // txtTipo
             // 
-            txtTipo.Location = new Point(105, 84);
+            txtTipo.Location = new Point(130, 84);
             txtTipo.Name = "txtTipo";
-            txtTipo.Size = new Size(252, 23);
+            txtTipo.Size = new Size(227, 23);
             txtTipo.TabIndex = 9;
             // 
             // label4
@@ -143,9 +143,9 @@
             // 
             // txtFecha
             // 
-            txtFecha.Location = new Point(105, 115);
+            txtFecha.Location = new Point(130, 115);
             txtFecha.Name = "txtFecha";
-            txtFecha.Size = new Size(252, 23);
+            txtFecha.Size = new Size(227, 23);
             txtFecha.TabIndex = 11;
             // 
             // label5
@@ -159,9 +159,9 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(105, 147);
+            txtValor.Location = new Point(130, 147);
             txtValor.Name = "txtValor";
-            txtValor.Size = new Size(252, 23);
+            txtValor.Size = new Size(227, 23);
             txtValor.TabIndex = 13;
             // 
             // frmNotas

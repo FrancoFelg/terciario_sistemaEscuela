@@ -122,5 +122,10 @@ namespace Escuela002
 
             SetAlumnos();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

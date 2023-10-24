@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnBuscar = new Button();
             lblMatricula = new Label();
-            textBox1 = new TextBox();
+            txtMatricula = new TextBox();
             lblApellido = new Label();
             lblNombre = new Label();
             lblIngreso = new Label();
-            lblCodigoPostal = new Label();
-            lblFechaNac = new Label();
-            lblNotaMax = new Label();
-            lblNotaMin = new Label();
+            lblCP = new Label();
+            lblFecNac = new Label();
+            lblNotMax = new Label();
+            lblNotMin = new Label();
             lblPromedio = new Label();
             dgvNotasAlumno = new DataGridView();
             btnSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvNotasAlumno).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnBuscar
             // 
-            button1.Location = new Point(276, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
+            btnBuscar.Location = new Point(276, 26);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 0;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // lblMatricula
             // 
@@ -62,12 +63,12 @@
             lblMatricula.TabIndex = 1;
             lblMatricula.Text = "Matrícula:";
             // 
-            // textBox1
+            // txtMatricula
             // 
-            textBox1.Location = new Point(91, 26);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(179, 23);
-            textBox1.TabIndex = 2;
+            txtMatricula.Location = new Point(91, 26);
+            txtMatricula.Name = "txtMatricula";
+            txtMatricula.Size = new Size(179, 23);
+            txtMatricula.TabIndex = 2;
             // 
             // lblApellido
             // 
@@ -96,41 +97,41 @@
             lblIngreso.TabIndex = 5;
             lblIngreso.Text = "Ingreso:";
             // 
-            // lblCodigoPostal
+            // lblCP
             // 
-            lblCodigoPostal.AutoSize = true;
-            lblCodigoPostal.Location = new Point(25, 168);
-            lblCodigoPostal.Name = "lblCodigoPostal";
-            lblCodigoPostal.Size = new Size(84, 15);
-            lblCodigoPostal.TabIndex = 6;
-            lblCodigoPostal.Text = "Codigo Postal:";
+            lblCP.AutoSize = true;
+            lblCP.Location = new Point(25, 168);
+            lblCP.Name = "lblCP";
+            lblCP.Size = new Size(84, 15);
+            lblCP.TabIndex = 6;
+            lblCP.Text = "Codigo Postal:";
             // 
-            // lblFechaNac
+            // lblFecNac
             // 
-            lblFechaNac.AutoSize = true;
-            lblFechaNac.Location = new Point(25, 201);
-            lblFechaNac.Name = "lblFechaNac";
-            lblFechaNac.Size = new Size(122, 15);
-            lblFechaNac.TabIndex = 7;
-            lblFechaNac.Text = "Fecha de Nacimiento:";
+            lblFecNac.AutoSize = true;
+            lblFecNac.Location = new Point(25, 201);
+            lblFecNac.Name = "lblFecNac";
+            lblFecNac.Size = new Size(122, 15);
+            lblFecNac.TabIndex = 7;
+            lblFecNac.Text = "Fecha de Nacimiento:";
             // 
-            // lblNotaMax
+            // lblNotMax
             // 
-            lblNotaMax.AutoSize = true;
-            lblNotaMax.Location = new Point(412, 201);
-            lblNotaMax.Name = "lblNotaMax";
-            lblNotaMax.Size = new Size(82, 15);
-            lblNotaMax.TabIndex = 10;
-            lblNotaMax.Text = "Nota Máxima:";
+            lblNotMax.AutoSize = true;
+            lblNotMax.Location = new Point(412, 201);
+            lblNotMax.Name = "lblNotMax";
+            lblNotMax.Size = new Size(82, 15);
+            lblNotMax.TabIndex = 10;
+            lblNotMax.Text = "Nota Máxima:";
             // 
-            // lblNotaMin
+            // lblNotMin
             // 
-            lblNotaMin.AutoSize = true;
-            lblNotaMin.Location = new Point(412, 168);
-            lblNotaMin.Name = "lblNotaMin";
-            lblNotaMin.Size = new Size(80, 15);
-            lblNotaMin.TabIndex = 9;
-            lblNotaMin.Text = "Nota Mínima:";
+            lblNotMin.AutoSize = true;
+            lblNotMin.Location = new Point(412, 168);
+            lblNotMin.Name = "lblNotMin";
+            lblNotMin.Size = new Size(80, 15);
+            lblNotMin.TabIndex = 9;
+            lblNotMin.Text = "Nota Mínima:";
             // 
             // lblPromedio
             // 
@@ -167,19 +168,20 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnSalir);
             Controls.Add(dgvNotasAlumno);
-            Controls.Add(lblNotaMax);
-            Controls.Add(lblNotaMin);
+            Controls.Add(lblNotMax);
+            Controls.Add(lblNotMin);
             Controls.Add(lblPromedio);
-            Controls.Add(lblFechaNac);
-            Controls.Add(lblCodigoPostal);
+            Controls.Add(lblFecNac);
+            Controls.Add(lblCP);
             Controls.Add(lblIngreso);
             Controls.Add(lblNombre);
             Controls.Add(lblApellido);
-            Controls.Add(textBox1);
+            Controls.Add(txtMatricula);
             Controls.Add(lblMatricula);
-            Controls.Add(button1);
+            Controls.Add(btnBuscar);
             Name = "frmAlumnosNotas";
             Text = "Notas de Alumno";
+            Load += frmAlumnosNotas_Load;
             ((System.ComponentModel.ISupportInitialize)dgvNotasAlumno).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -187,16 +189,16 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnBuscar;
         private Label lblMatricula;
-        private TextBox textBox1;
+        private TextBox txtMatricula;
         private Label lblApellido;
         private Label lblNombre;
         private Label lblIngreso;
-        private Label lblCodigoPostal;
-        private Label lblFechaNac;
-        private Label lblNotaMax;
-        private Label lblNotaMin;
+        private Label lblCP;
+        private Label lblFecNac;
+        private Label lblNotMax;
+        private Label lblNotMin;
         private Label lblPromedio;
         private DataGridView dgvNotasAlumno;
         private Button btnSalir;
